@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client:dev": "react-scripts start",
+    "db:build": "node .db/seedData"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,27 @@
   "bugs": {
     "url": "https://github.com/nickablan/MarshallSecurity/issues"
   },
-  "homepage": "https://github.com/nickablan/MarshallSecurity#readme"
+  "homepage": "https://github.com/nickablan/MarshallSecurity#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
