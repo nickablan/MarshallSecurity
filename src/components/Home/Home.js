@@ -5,7 +5,7 @@ import "./homeStyle.css"
 const Home = () => {
     return (
         <div className="welcome">
-            <h1>Welcome to Marshall Security!</h1>
+            <h1>Marshall Security home page</h1>
             <div>
                 
             </div>
