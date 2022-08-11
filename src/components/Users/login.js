@@ -1,7 +1,7 @@
 import React from 'react'
+import "./users.scss"
 
 const Login = () => {
-    console.log('displaying login page')
     return (
         <div className="login">
             <h1>Login</h1>

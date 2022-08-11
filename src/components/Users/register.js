@@ -1,7 +1,7 @@
 import React from 'react'
+import "./users.scss"
 
 const Register = () => {
-    console.log('displaying register page')
     return (
         <div className="register">
             <h1>Register</h1>

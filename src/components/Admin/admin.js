@@ -1,7 +1,7 @@
 import React from 'react'
+import "./admin.scss"
 
 const Admin = () => {
-    console.log('displaying admin page')
     return (
         <div className="admin">
             <h1>Admin</h1>

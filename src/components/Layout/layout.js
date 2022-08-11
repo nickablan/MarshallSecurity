@@ -1,25 +1,17 @@
 import { Outlet, Link } from "react-router-dom"
+import "./layout.scss"
 
 const Layout = () => {
-    console.log('displaying layout page')
     return (
         <div className="layout">
             <nav>
             <h1>Welcome to Marshall Security!</h1>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/login">Login</Link>
-                    </li>
-                    <li>
-                        <Link to="/admin">Admin</Link>
-                    </li>
-                    <li>
-                        <Link to="/register">Register</Link>
-                    </li>
-                </ul>
+                <div className="router-links">
+                        <Link to="/" className="router-links">Home</Link>
+                        <Link to="/login" className="router-links">Login</Link>
+                        <Link to="/admin" className="router-links">Admin</Link>
+                        <Link to="/register" className="router-links">Register</Link>
+                </div>
             </nav>
             <Outlet />
             <footer>

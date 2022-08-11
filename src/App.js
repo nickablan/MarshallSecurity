@@ -2,16 +2,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 
 import Home from "./components/Home/home"
-import Login from "./components/Login/login"
-import Register from "./components/Login/register";
+import Login from "./components/Users/login"
+import Register from "./components/Users/register";
 import Admin from "./components/Admin/admin"
 import Layout from "./components/Layout/layout"
 
-import "./App.css";
+import "./App.scss"
 
 const App = () => {
     return(
-        <div>
+        <div className="App">
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout />}>

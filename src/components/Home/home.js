@@ -1,12 +1,12 @@
 import React from "react"
+import "./home.scss"
 
 const Home = () => {
-    console.log('displaying home page')
     return (
         <div className="welcome">
             <h1>Marshall Security home page</h1>
             <div>
-                
+                Home page
             </div>
         </div>
     )
