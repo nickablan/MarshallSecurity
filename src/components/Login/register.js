@@ -1,8 +1,9 @@
 import React from 'react'
 
 const Register = () => {
+    console.log('displaying register page')
     return (
-        <div className="welcome">
+        <div className="register">
             <h1>Register</h1>
             <div>
                 

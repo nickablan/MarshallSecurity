@@ -1,13 +1,14 @@
 import { Outlet, Link } from "react-router-dom"
 
 const Layout = () => {
+    console.log('displaying layout page')
     return (
-        <div>
+        <div className="layout">
             <nav>
             <h1>Welcome to Marshall Security!</h1>
                 <ul>
                     <li>
-                        <Link to="/nickablan/MarshallSecurit">Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
                         <Link to="/login">Login</Link>
@@ -15,9 +16,9 @@ const Layout = () => {
                     <li>
                         <Link to="/admin">Admin</Link>
                     </li>
-                    {/* <li>
-                        <Link to="/">Home</Link>
-                    </li> */}
+                    <li>
+                        <Link to="/register">Register</Link>
+                    </li>
                 </ul>
             </nav>
             <Outlet />
