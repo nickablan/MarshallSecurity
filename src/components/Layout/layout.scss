@@ -14,7 +14,8 @@ nav {
     background-color: rgb(211, 210, 163);
     overflow: hidden;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    padding-left: 10px;
 }
 
 .router-links{
@@ -23,7 +24,8 @@ nav {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  border:black
+  border:black;
+  color: black;
 }
             
 .router-links.active{

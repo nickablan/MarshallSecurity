@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router-dom"
+import Button from '@material-ui/core/Button'
 import "./layout.scss"
 
 const Layout = () => {
@@ -7,10 +8,18 @@ const Layout = () => {
             <nav>
             <h1>Welcome to Marshall Security!</h1>
                 <div className="router-links">
-                        <Link to="/" className="router-links">Home</Link>
-                        <Link to="/login" className="router-links">Login</Link>
-                        <Link to="/admin" className="router-links">Admin</Link>
-                        <Link to="/register" className="router-links">Register</Link>
+                    <Button variant="contained" >
+                        <Link to="/" >Home</Link>
+                    </Button>
+                    <Button variant="contained" color="primary">
+                        <Link to="/login" >Login</Link>
+                    </Button>
+                    <Button variant="contained" >
+                        <Link to="/admin" >Admin</Link>
+                    </Button>
+                    <Button variant="contained" color="primary">
+                        <Link to="/register" >Register</Link>
+                    </Button>
                 </div>
             </nav>
             <Outlet />
